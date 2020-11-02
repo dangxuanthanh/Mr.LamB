@@ -1,0 +1,9 @@
+extends _layout.pug
+
+block var
+	- var title = 'Tin tức chi tiết'
+	- var bodyClass = 'news-detail-page'
+
+block main
+	include ../components/breadcrumb/index.pug
+	include ../components/news-list/news-detail/index.pug

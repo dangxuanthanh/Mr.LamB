@@ -1,0 +1,56 @@
+.block_about
+	padding: 55px 0 0 0
+	.row
+		margin-bottom: 80px
+		@media screen and ( max-width: 1024.98px )
+			margin-top: 30px
+			margin-bottom: 30px
+		@media screen and ( max-width: 576px )
+			margin-top: 30px
+			margin-bottom: 30px
+		&:nth-child(2n)
+			.col-lg-6
+				&:nth-child(2n+1)
+					order: 2
+					@media screen and ( max-width: 576px )
+						order: inherit
+				.text_box
+					padding-right: 40px
+				.develope
+					padding: 30px 0 0 0
+					@media screen and ( max-width: 576px )
+						padding: 30px 0 0 0
+	.card_img
+		.img
+			max-width: 100%
+			max-height: 100%
+			width: 100%
+			height: 360px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+	.about
+		padding: 30px 0
+		.title-about
+			h2
+				color: #111111
+				font-size: 24px
+		.text-about
+			padding-top: 15px
+			ul
+				padding: 0
+				list-style: none
+				li
+					position: relative
+					padding-left: 20px
+					&:before
+						content: "\f105"
+						font-family: 'Font Awesome 5 Pro'
+						position: absolute
+						top: 0
+						left: 0
+						color: #777777
+					p
+						color: #111111
+						font-size: 1rem

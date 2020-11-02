@@ -1,0 +1,189 @@
+section.block_product-detail
+	.container
+		.row
+			.col-12.col-md-7.col-lg-7
+				.swiper-product-wrapper
+					.swiper-product-thumbs
+						.swiper-container
+							.swiper-wrapper
+								.swiper-slide
+									.wrapper
+										img(src="./img/home/product-1/ao-1.png", alt="")
+								.swiper-slide
+									.wrapper
+										img(src="./img/home/product-1/ao-2.png", alt="")
+						//- .product-thumb-prev
+						//- 	em.lnr.lnr-chevron-up
+						//- .product-thumb-next
+						//- 	em.lnr.lnr-chevron-down 
+					.swiper-product-main#gallery_01
+						.swiper-container
+							.swiper-wrapper
+								.swiper-slide
+									.wrapper
+										img(src="./img/home/product-1/ao-1.png", data-zoom-image="./img/home/product-1/ao-2.png", alt="").zoom-img
+								.swiper-slide
+									.wrapper
+										img(src="./img/home/product-1/ao-2.png", data-zoom-image="./img/home/product-1/ao-1.png", alt="").zoom-img
+			.col-12.col-md-5.col-lg-5
+				.block_description
+					.name_product
+						h2 Áo Thun Nam Tay Dài Regular
+					.block_price
+						.price
+							p 400.000 đ
+						.discount
+							p 500.000 đ
+						.link
+							a(href="").material-icons link
+					.description
+						.title_description
+							p Tình trạng
+						.content_status
+							p Còn hàng
+					.description
+						.title_description
+							p Mã sản phẩm
+						.content_description
+							p 10F19SWE005
+					.description
+						.title_description
+							p Chất liệu
+						.content_description
+							p 52% cotton, 48% polyester.
+					.description
+						.title_description
+							p Đặc tính
+						.content_description
+							p Cảm giác mềm mại, thoải mái, có độ thấm hút tốt, chống nhăn cao và tránh bám bụi.
+					.description
+						.title_description.center
+							p Kích thước
+						.content_size
+							ul
+								li
+									.size.active S
+								-for(i=0;i<=4;i++)
+									li
+										.size XXL
+					.description
+						.title_description
+							p Màu sắc
+						.content_color
+							ul
+								li.active
+									.color
+								li
+									.color
+								li
+									.color
+					.description
+						.title_description.center
+							p Số lượng
+						.content_number
+							a.add-to-card(href="#") Thêm giỏ hàng
+
+section.product-description
+	.container
+		.row 
+			.col-lg-12 
+				.tab-panels
+					ul.tab-navigation
+						li 
+							a(href="javascript:void(0)" data-type='product-tab-1') MÔ TẢ SẢN PHẨM
+						li
+							a(href="javascript:void(0)" data-type='product-tab-2') HƯỚNG DẪN SỬ DỤNG
+		.tab-wrapper
+			.tab-item#product-tab-1
+				.product-detail-wrapper
+					.description-wrapper
+						article
+							.fullcontent
+								.row
+									.col-lg-12
+										.description-detail
+											.content 
+												p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+												p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+												p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+												p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+												p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+												
+							.col-lg-12 
+								.btn-wrapper-center
+									.btn-view-more
+										a(href="") Xem Thêm
+										em.far.fa-chevron-double-down
+
+section.block_product-detail-3
+	.container
+		.block-title
+			.head-title
+				h2 sản phẩm liên quan
+		.product-related-swiper-wrapper
+			.nav-arrow-prev
+				em.fal.fa-angle-left
+			.nav-arrow-next
+				em.fal.fa-angle-right
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						.product-detail-slide
+							a(href="")
+								.card_img
+									.img
+										img(src="./img/home/product-1/ao-1.png", alt="")
+									.sale
+										img(src="./img/product/sale.png", alt="")
+							.content-product-silde
+								.name_product
+									a(href="") Áo Thun Nam Tay Dài Regular 
+								.price
+									p 400.000 VND
+								.discount
+									p 500.000 VND
+					.swiper-slide
+						.product-detail-slide
+							a(href="")
+								.card_img
+									.img
+										img(src="./img/home/product-1/ao-1.png", alt="")
+									.sale
+										img(src="./img/product/sale.png", alt="")
+								.content-product-silde
+									.name_product
+										a(href="") Áo Thun Nam Tay Dài Regular 
+									.price
+										p 400.000 VND
+									.discount
+										p 500.000 VND
+					.swiper-slide
+						.product-detail-slide
+							a(href="")
+								.card_img
+									.img
+										img(src="./img/home/product-1/ao-1.png", alt="")
+									.sale
+										img(src="./img/product/sale.png", alt="")
+								.content-product-silde
+									.name_product
+										a(href="") Áo Thun Nam Tay Dài Regular 
+									.price
+										p 400.000 VND
+									.discount
+										p 500.000 VND
+					.swiper-slide
+						.product-detail-slide
+							a(href="")
+								.card_img
+									.img
+										img(src="./img/home/product-1/ao-1.png", alt="")
+									.sale
+										img(src="./img/product/sale.png", alt="")
+								.content-product-silde
+									.name_product
+										a(href="") Áo Thun Nam Tay Dài Regular 
+									.price
+										p 400.000 VND
+									.discount
+										p 500.000 VND

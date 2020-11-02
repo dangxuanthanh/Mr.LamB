@@ -1,0 +1,554 @@
+.block_product-detail
+	padding-top: 70px
+	@media screen and ( max-width: 576px )
+		padding-top: 30px
+	.swiper-product-wrapper
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		flex-wrap: wrap
+		.swiper-product-thumbs
+			flex: 0 0 100px
+			display: flex
+			max-height: 450px
+			position: relative
+			@media screen and(max-width:1025px)
+				// padding: 20px 40px
+				order: 2
+				width: 100%
+				flex: 0  0 100%
+				margin: 30px 0 30px 0
+			.swiper-slide
+				// background: #f3f3f3
+			// .product-thumb-prev,.product-thumb-next
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				width: 100%
+				height: 32px
+				display: flex
+				justify-content: center
+				align-items: center
+				@media screen and(max-width:1025px)
+					margin-top: 10px
+
+				&:focus
+					outline: none
+				em
+					color: #999999
+					font-size: 26px
+			// .product-thumb-prev
+				top: -10px
+				@media screen and(max-width:1025px)
+					background: none
+					left: 0
+					width: 50px
+					height: 100%
+					display: flex
+					justify-content: center
+					align-items: center
+					top: 50%
+					transform: translateY(-50%)
+					em
+						transform: rotate(-90deg)
+			// .product-thumb-next
+				bottom: -65px
+				@media screen and(max-width:1025px)
+					right: 0
+					width: 50px
+					height: 100%
+					display: flex
+					justify-content: center
+					align-items: center
+					bottom: -10px
+					margin-top: 20px
+					left: auto
+					transform: translate(0)
+					em
+						transform: rotate(-90deg)
+			.swiper-container
+				margin-top: 40px
+				min-height: 330px
+				height: 100%
+				width: 100%
+				@media screen and(max-width:1025px)
+					margin-top: 20px
+					position: relative
+					min-height: 0
+				@media screen and(max-width:576px)
+					margin-top: 20px
+					position: relative
+					min-height: 0
+					margin-left: -33px
+					margin-bottom: 20px
+				.swiper-wrapper
+					max-height: 330px
+					display: flex
+					// justify-content: center
+				.swiper-slide
+					width: 98%
+					height: 25% !important
+					margin-left: 1px
+					margin-right: 1px
+					margin-top: 2px
+					transition: .3s all ease-in-out
+					height: 80px !important
+					display: flex
+					justify-content: center
+					align-items: center
+				
+					.wrapper
+						height: 80px
+						width: auto
+						padding: 20px
+						border: 1px solid #111111
+						img
+							width: 100%
+							height: 100%
+							object-fit: contain
+					@media screen and(max-width:1025px)
+						width: 100px
+						margin: 4px
+						height: 100px !important
+						.wrapper
+							height: 100px
+					&.swiper-slide-thumb-active
+						.wrapper
+							box-shadow: 0px 0px 0px 1px 
+		.swiper-product-main
+			flex: 0 0 calc( 100% - 120px )
+			max-width: calc( 100% - 120px )
+			margin-left: 20px
+			@media screen and(max-width:1025px)
+				order: 1
+				flex: 0 0 100%
+				max-width: 100%
+				margin: 0
+			.swiper-slide
+				width: 100%
+				// background: #f3f3f3
+				// padding: 2rem
+			.wrapper
+				display: block
+				height: 0
+				overflow: hidden
+				padding-top: 514 / 480 * 100%
+				position: relative
+				img
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					object-fit: contain
+	.center
+		display: flex
+		align-items: center
+	.name_product
+		h2
+			font-size: 24px
+			color: #00415f
+			font-family: "Montserrat-Bold"
+	.block_price
+		display: flex
+		align-items: center
+		padding: 10px 0
+		border-bottom: 1px solid #e0e0e0
+		.price
+			p
+				font-family: "Montserrat-Bold"
+				color: #d80303
+				font-size: 24px
+				margin-right: 15px
+		.discount
+			p
+				text-decoration: line-through
+				font-size: 18px
+				color: #b4b0b0
+				margin-right: 15px
+		.link
+			.material-icons
+				font-size: 24px
+				color: #00415f
+				background-color: #f5f5f5
+				padding: 8px
+				border-radius: 50%
+				cursor: pointer
+
+	.description
+		display: flex
+		padding: 20px 0
+		border-bottom: 1px solid #e0e0e0
+		.title_description
+			width: 31%
+			p
+				color: #001111
+				font-family: "Montserrat-Bold"
+		.content_description
+			width: 69%
+		.content_status
+			width: 69%
+			p
+				color: #00415f
+				text-transform: uppercase
+				font-family: "Montserrat-Bold"
+		.content_size
+			width: 69%
+			ul
+				display: flex
+				list-style: none
+				li
+					.size
+						display: flex
+						justify-content: center
+						align-items: center
+						width: 30px
+						height: 30px
+						border: 1px solid #999999
+						margin-right: 10px
+						font-size: 12px
+						&:hover
+							border: 1px solid #00415f
+							color: #00415f
+							cursor: pointer
+					.active
+						border: 1px solid #00415f
+						color: #00415f
+		.content_color
+			width: 69%
+			ul
+				display: flex
+				list-style: none
+				li
+					width: 30px
+					height: 30px
+					margin-right: 15px
+					border-radius: 50%
+					display: flex
+					align-items: center
+					justify-content: center
+					cursor: pointer
+					&:nth-child(1)
+						.color
+							background-color: #cb5e13
+					&:nth-child(2)
+						.color
+							background-color: #091857
+					&:nth-child(3)
+						.color
+							background-color: #570909
+					.color
+						width: 20px
+						height: 20px
+						background-color: #cb5e13
+						border-radius: 50%
+						padding: 10px
+				.active
+					border: 1px solid #074663
+		.content_number
+			width: 69%
+			.add-to-card
+				width: 200px
+				height: 40px
+				background-color: #074663
+				display: flex
+				align-items: center
+				justify-content: center
+				color: #fff
+				font-family: "Montserrat-Bold"
+
+// section 2
+.product-description
+	padding: 60px 0 0 0
+	.pro-descript
+		border: 1px solid #e1e1e1
+		// background: #f9f9f9
+	.tab-panels
+		border-bottom: 1px solid #e1e1e1
+		ul 
+			padding: 0
+			list-style: none
+			display: flex
+			li
+				display: flex
+				a 
+					font-size: 16px
+					color: #00415f
+					background: none
+					font-weight: 600
+					width: 210px
+					height: 40px
+					border-left: 1px solid #00415f
+					border-top: 1px solid #00415f
+					border-right: 1px solid #00415f
+					border-bottom: 1px solid #00415f
+					display: flex
+					align-items: center
+					justify-content: center
+					text-transform: uppercase
+					@media(max-width: 576px)
+						padding: 5px 10px
+						width: max-content
+					&:hover
+						// background: $azure
+						// color: #ffffff
+				&.active
+					a
+						color: #ffffff
+						background: #00415f
+	article
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		.fullcontent
+			overflow: hidden
+			max-height: 300px
+			transition: max-height .5s ease-in-out
+			color: #333333
+			// color: $azure
+			@media(min-width: 1260px)
+				max-height: 400px
+			a 
+				// color: $azure
+			ul 
+				color: #333
+			table
+				width: 100%
+				tbody
+					tr
+						border: 2px dotted #d7d7d7
+						th 
+							background: #f5f5f5 
+							width: 232px
+							height: 42px
+							padding-left: 20px
+							
+						td
+							width: 360px
+							height: 42px
+							padding-left: 20px
+							color: #333333
+							background: #ffffff
+							&:first-child
+								
+								background: #f5f5f5
+								
+								// max-width: 300px !important
+							&:nth-child(2)
+								background: #fff
+							// &:first-child
+								
+							// 	background: #f5f5f5
+							// 	width: 40%
+							&:last-child
+								background: #ffffff
+							@media(min-width: 1024px)
+								&:first-child
+									
+									width: 300px !important
+			.description-detail
+				padding-bottom: 20px
+				border-bottom: 1px solid #e0e0e0
+				.content
+					p 
+						font-size: 16px
+						color: #333 
+		.btn-wrapper-center
+			display: flex
+			align-items: center
+			justify-content: center
+			.btn-view-more
+				width: 155px
+				height: 45px
+				color: #333333
+				margin: 30px 0 30px 0
+				display: flex
+				align-items: center
+				justify-content: center
+				&.open
+					.view-less-text
+						display: inline-block
+					.view-more-text
+						display: none
+					em 
+						transform: rotate(180deg)
+				span
+					font-size: 1rem
+					color: #ffffff
+					font-weight: 400
+					display: inline-block
+					margin-right: 5px
+				.view-more-text
+					display: inline-block
+				.view-less-text
+					display: none
+					
+				a 
+					font-size: 16px
+					color: #333333
+					padding-right: 10px
+				em 
+					font-size: 14px
+		&.active
+			.fullcontent
+				transition: max-height 1s ease-in-out
+			.view-more-text
+				@apply hidden
+			.view-less-text
+				@apply block
+			.btn-view-more
+				.plus-icon
+					&:after
+						transition: .3s all ease-in-out
+						opacity: 0
+	.description-wrapper
+		border-bottom: 1px solid #e1e1e1
+		border-left: 1px solid #e1e1e1
+		border-right: 1px solid #e1e1e1
+		padding: 30px 20px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+		background: #f9f9f9
+		@media(min-width: 576px)
+			padding: 30px
+		@media(min-width: 1200px)
+			padding-left: 75px
+			padding-right: 75px
+		h2, h3, h4
+			// color: $azure
+		strong
+			// color: $azure
+			font-size: 18px
+			em
+				// color: $azure
+		img
+			max-width: 100%
+			height: auto
+			// display: block
+			margin: 1rem auto
+		p
+			font-size: 1rem
+			color: #333333
+			a 
+				// color: $azure
+				&:hover
+					border-bottom: 1px solid #62a6d3
+
+// section 3
+.block_product-detail-3
+	padding: 55px 0 90px 0
+	@media screen and ( max-width: 576px )
+		padding: 30px 0 30px 0
+	.product-related-swiper-wrapper
+		position: relative
+		padding-top: 15px
+		@media screen and ( max-width: 576px )
+			padding-top: 0
+	.nav-arrow-prev,.nav-arrow-next
+		position: absolute
+		width: 40px
+		height: 40px
+		top: 40%
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: .3s all  ease-in-out
+		@media screen and ( max-width: 400px )
+			top: 40%
+		&:hover
+			// color: #c7931c
+		em
+			transition: .3s all  ease-in-out
+			color: #707070
+			font-size: 36px
+			color: #999999
+			// @media screen and ( max-width: 576px )
+			// 	font-size: 48px
+	.nav-arrow-next
+		right: -60px
+		cursor: pointer
+		@media screen and ( max-width: 1439px)
+			right: -45px
+		@media screen and ( max-width: 1350px)
+			right: 0
+			
+		@media screen and ( max-width: 767px)
+			right: 0
+		@media screen and ( max-width: 576px)
+			right: -15px
+			top: 120px
+			
+	.nav-arrow-prev
+		left: -60px
+		cursor: pointer
+		@media screen and ( max-width: 1439px)
+			left: -45px
+		@media screen and ( max-width: 1350px)
+			left: 0
+		@media screen and ( max-width: 767px)
+			left: 0
+		@media screen and ( max-width: 576px)
+			left: -15px
+			top: 120px
+		
+	.swiper-container
+		margin: 0
+		@media screen and ( max-width: 1350px)
+			margin: 0 40px
+	.swiper-wrapper
+		.swiper-slide
+			.product-detail-slide
+				.card_img
+					.img
+						max-width: 100%
+						max-height: 100%
+						width: 100%
+						height: 345px
+						@media screen and ( max-width: 576px )
+							height: 345px
+						img
+							width: 100%
+							height: 100%
+							object-fit: cover
+					.sale
+						position: absolute
+						top: -12px
+						left: -2px
+						width: 70px
+						height: 56px
+						img
+							width: 100%
+							height: 100%
+						@media screen and ( max-width: 576px )
+							top: -7px
+							width: 46px
+							height: 36px
+				.content-product-silde
+					text-align: center
+					padding-top: 15px
+					padding-bottom: 28px
+					.name_product
+						a
+							color: #111111
+							font-size: 1rem
+					.price
+						p
+							color: #d30000
+							font-size: 1rem
+							font-family: "Montserrat-Bold"
+					.discount
+						p
+							text-decoration: line-through
+							color: #b4b0b0
+							font-size: 1rem
+				&:hover
+					cursor: pointer
+					.content-product-silde
+						.name_product
+							a
+								color: #00415f
+						.price
+							p
+								color: #00415f

@@ -1,0 +1,28 @@
+block var
+
+doctype html
+
+html(lang="en")
+
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(rel="stylesheet", href="./css/core.min.css")
+		link(rel="stylesheet", href="./css/main.min.css")
+		link(href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet")
+		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+		link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
+		
+		title #{title}
+
+	body(class=bodyClass)
+		block header
+			include ../components/_global/header.pug
+		main
+			block main
+		block footer
+			include ../components/_global/footer.pug
+		script(src="./js/core.min.js")
+		script(src="./js/main.min.js")
+		<script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>

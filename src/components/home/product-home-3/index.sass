@@ -1,0 +1,184 @@
+.block_product-home-3
+	background-image: url('../img/home/product-1/bg-product.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 55px 0 90px 0
+	margin: 60px 0
+	@media screen and ( max-width: 576px )
+		margin: 30px 0
+	.block-title
+		@media screen and ( max-width: 576px )
+			padding-bottom: 30px
+		.head-title
+			h2
+				color: #ffffff
+				@media screen and ( max-width: 576px )
+					font-size: 22px
+	.product-home-3-swiper-wrapper
+		position: relative
+		padding-top: 35px
+		@media screen and ( max-width: 576px )
+			padding-top: 0
+	.nav-arrow-prev,.nav-arrow-next
+		position: absolute
+		width: 40px
+		height: 40px
+		top: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: .3s all  ease-in-out
+		@media screen and ( max-width: 400px )
+			top: 40%
+		&:hover
+			// color: #c7931c
+		em
+			transition: .3s all  ease-in-out
+			color: #707070
+			font-size: 30px
+			color: #999999
+			// @media screen and ( max-width: 576px )
+			// 	font-size: 48px
+	.nav-arrow-next
+		right: -60px
+		cursor: pointer
+		@media screen and ( max-width: 1439px)
+			right: -45px
+		@media screen and ( max-width: 1350px)
+			right: 0
+			
+		@media screen and ( max-width: 767px)
+			right: 15px
+		@media screen and ( max-width: 576px)
+			right: -15px
+			top: 120px
+			
+	.nav-arrow-prev
+		left: -60px
+		cursor: pointer
+		@media screen and ( max-width: 1439px)
+			left: -45px
+		@media screen and ( max-width: 1350px)
+			left: 0
+		@media screen and ( max-width: 767px)
+			left: 15px
+		@media screen and ( max-width: 576px)
+			left: -15px
+			top: 120px
+		
+	.swiper-container
+		margin: 0
+		@media screen and ( max-width: 1350px)
+			margin: 0 40px
+	.swiper-wrapper
+		.swiper-slide
+			.wrapper
+				.block-item 
+					position: relative
+					cursor: pointer
+					.item__img 
+						a
+							width: 100%
+							max-height: 100%
+							height: 400px
+							img
+								width: 100%
+								height: 100%
+						// .album
+							margin-top: 15px
+							position: absolute
+							bottom: 0
+							color: #ffffff
+							width: 100%
+							height: 60px
+							background: rgba(#222, 0.5)
+							display: flex
+							justify-content: center
+							align-items: center
+							.caption
+								font-size: 18px
+								color: #ffffff
+							@media screen and ( max-width: 576px )
+								display: none
+						&:hover
+							.album
+								display: none
+					.item__img-hover 
+						position: absolute
+						left: 50%
+						top: 50%
+						width: 0
+						height: 0
+						transform-origin: center
+						opacity: 0
+						visibility: hidden
+						transition: .2s all ease-in-out
+						background-color: rgba( #333,.5)
+						pointer-events: none
+						.content 
+							display: flex
+							align-items: center
+							justify-content: center
+							height: 100%
+							visibility: hidden
+							opacity: 0
+							transition: .2s all ease-in-out
+							.more-view
+								a
+									color: #ffffff
+									background: #00415f
+									padding: 10px 35px
+									display: flex
+									justify-content: center
+									align-items: center
+						
+					@media screen and (min-width: 1024px) 
+						&:hover 
+							.item__img-hover 
+								visibility: visible
+								opacity: 1
+								top: 0
+								left: 0
+								height: 100%
+								width: 100%
+
+								.content 
+									opacity: 1
+									visibility: visible
+					@media(max-width: 1024.98px) 
+						width: 100%
+						height: unset
+						.item__img-hover 
+							opacity: 1
+							visibility: visible
+							width: 100%
+							height: 100%
+							transform: none
+							top: 0
+							left: 0
+							border-radius: 10px
+							.content 
+								opacity: 1
+								visibility: visible
+								.desc
+									h5 
+										font-size: 16px
+					@media(max-width: 576px) 
+						width: 100%
+						height: unset
+						.item__img-hover 
+							opacity: 1
+							visibility: visible
+							width: 100%
+							height: 100%
+							transform: none
+							top: 0
+							left: 0
+							border-radius: 10px
+							.content 
+								opacity: 1
+								visibility: visible
+								.desc
+									h5 
+										font-size: 14px

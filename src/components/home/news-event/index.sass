@@ -1,0 +1,92 @@
+.block_news-event
+	margin-top: 60px
+	background-image: url('../img/service-detail/bg-dichvukhac.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	@media screen and ( max-width: 576px )
+		margin-top: 30px
+	.news-event-swiper-wrapper
+		position: relative
+		padding-top: 35px
+		@media screen and ( max-width: 576px )
+			padding-top: 0
+	.nav-arrow-prev,.nav-arrow-next
+		position: absolute
+		width: 40px
+		height: 40px
+		top: 20%
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: .3s all  ease-in-out
+		@media screen and ( max-width: 400px )
+			top: 40%
+		&:hover
+			// color: #c7931c
+		em
+			transition: .3s all  ease-in-out
+			color: #707070
+			font-size: 30px
+			color: #999999
+			// @media screen and ( max-width: 576px )
+			// 	font-size: 48px
+	.nav-arrow-next
+		right: -60px
+		cursor: pointer
+		@media screen and ( max-width: 1439px)
+			right: -45px
+		@media screen and ( max-width: 1350px)
+			right: 0
+			
+		@media screen and ( max-width: 767px)
+			right: 15px
+		@media screen and ( max-width: 576px)
+			right: 0
+			top: 120px
+			
+	.nav-arrow-prev
+		left: -60px
+		cursor: pointer
+		@media screen and ( max-width: 1439px)
+			left: -45px
+		@media screen and ( max-width: 1350px)
+			left: 0
+		@media screen and ( max-width: 767px)
+			left: 15px
+		@media screen and ( max-width: 576px)
+			left: 0
+			top: 120px
+		
+	.swiper-container
+		// margin: 0
+		// @media screen and ( max-width: 1350px)
+		// 	margin: 0 20px
+		// @media screen and ( max-width: 1024.98px)
+		// 	margin: 0
+	.swiper-wrapper
+		.swiper-slide
+			.wrapper
+				height: 100%
+				a
+					height: 200px
+					display: flex
+					justify-content: center
+					align-items: center
+					// padding: 30px
+					img
+						max-width: 100%
+						height: 210px
+						width: 100%
+			.caption_slide
+				padding: 15px 0 30px 0
+				.title_slide
+					a
+						font-size: 18px
+						color: #111111
+			&:hover
+				cursor: pointer
+				.caption_slide
+					.title_slide
+						a
+							color: #00415f

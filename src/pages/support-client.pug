@@ -1,0 +1,12 @@
+extends _layout.pug
+
+block var
+	- var title = 'Hỗ trợ khách hàng'
+	- var bodyClass = 'news-list-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/support-client/index.pug
+	include ../components/pagination/index.pug
+	include ../components/form/index.pug

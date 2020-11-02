@@ -1,0 +1,27 @@
+{
+    "font": [
+        "src/fonts/**",
+        "bower_components/mdi/fonts/**",
+        "bower_components/font-awesome/webfonts/**",
+        "bower_components/linearicons/dist/web-font/fonts/**",
+        "src/fonts/**",
+        "bower_components/lightgallery/dist/fonts/lg.ttf",
+        "node_modules/remixicon/fonts/**"
+    ],
+    "js": [
+        "bower_components/jquery/dist/jquery.min.js",
+        "bower_components/fancybox/dist/jquery.fancybox.js",
+        "src/_plugins/mapping-listener.js",
+        "src/_plugins/mapping.js",
+        "bower_components/swiper/dist/js/swiper.js",
+        "src/_plugins/medium-zoom.js",
+        "bower_components/fancybox/dist/jquery.fancybox.min.js"
+    ],
+    "css": [
+        "src/_plugins/font.css",
+        "src/_plugins/grid.css",
+        "src/_plugins/remixicon.css",
+        "bower_components/swiper/dist/css/swiper.css",
+        "bower_components/fancybox/dist/jquery.fancybox.css"
+    ]
+}

@@ -1,0 +1,125 @@
+.block_support
+	padding: 55px 0 0 0
+	.left-support
+		.title-sp
+			background: #111111
+			padding: 10px 20px
+			h2
+				color: #ffffff
+				font-size: 18px
+				text-transform: uppercase
+		.content-sp
+			background: #f9f9f9
+			padding: 30px 20px
+			border-bottom: 1px solid #111111
+			ul
+				list-style: none
+				padding: 0
+				li
+					&:nth-child(1)
+						padding-bottom: 30px
+					a
+						font-size: 18px
+						color: #111111
+					&:hover
+						a
+							color: #00415f
+	.sp-client
+		border: 1px solid #e0e0e0
+		padding: 30px
+		margin-bottom: 30px
+		.title-sp
+			h2
+				font-size: 18px 
+				color: #111111
+				text-transform: uppercase
+				font-family: "Montserrat-Medium"
+		.big-togglesupport
+			list-style: none
+			// .title
+			// 	text-transform: uppercase
+			// 	font-size: 18px
+			// 	font-family: "Montserrat-Medium"
+			// 	padding-top: 25px
+			.togglesupport
+				color: #111111
+				font-family: "Montserrat-Medium"
+				background-color: transparent
+				cursor: pointer
+				padding: 15px 0px
+				width: 100%
+				border: none
+				outline: none
+				display: flex
+				justify-content: space-between
+				align-items: center
+				font-size: 16px
+				border-bottom: 1px solid #e0e0e0
+				&:hover
+					color: #00415f
+				&:hover:after
+					color: #00415f
+				&:after
+					content: '\f078'
+					font-family: 'Font Awesome 5 Pro'
+					font-weight: bold
+					font-size: 12px
+					color: #111111
+					float: right
+				@media screen and ( max-width: 1024px )
+					padding: 14px 20px
+				@media screen and ( max-width: 576px )
+					padding: 14px 20px
+			.active
+				color: #00415f
+				border-bottom: 1px solid #00415f
+			.active:after
+				content: "\f077"
+				color: #00415f
+			.content
+				max-height: 0
+				overflow: hidden
+				transition: max-height 0.2s ease-out
+				.caption
+					padding: 20px 0
+	// .right-support
+		padding: 30px
+		border: 1px solid #e0e0e0
+		@media screen and ( max-width: 576px )
+			margin-top: 30px
+			margin-bottom: 30px
+		.card-title
+			h2
+				font-size: 18px 
+				color: #111111
+				text-transform: uppercase
+		.support-wrapper
+			cursor: pointer
+			.toggle-item
+				margin-bottom: 1rem
+				border-bottom: 1px solid #e0e0e0
+				.title
+					display: flex
+					align-items: center
+					justify-content: space-between
+					height: 50px
+					transition: .3s all  ease-in-out
+					span 
+						color: #111111
+						font-size: 14px
+						transition: .3s all  ease-in-out
+					em
+						transition: .3s all  ease-in-out
+				&.active
+					.title
+						margin-top: 10px
+						span
+							color: #00415f
+							border-bottom: 1px solid #e0e0e0
+							padding-bottom: 10px
+						em
+							transform: rotate(-180deg)
+					.caption
+						padding-bottom: 15px
+			.article
+				display: none

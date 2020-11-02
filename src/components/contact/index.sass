@@ -1,0 +1,156 @@
+.block-contact
+	padding: 60px 0 0 0
+	.left
+		background: #e5f2f6
+		// box-shadow: 0 3px 20px 0 rgba(0,0,0,.1)
+		padding: 55px 75px
+		@media screen and ( max-width: 576px )
+			padding: 20px 5px
+		.logo
+			display: flex
+			align-items: center
+			justify-content: center
+			padding-bottom: 30px
+		.title
+			padding-bottom: 30px
+			@media screen and ( max-width: 576px )
+				padding: 20px
+			h2
+				font-size: 17px
+				color: #333333
+				font-weight: 600
+				text-align: center
+
+		.card-body
+			ul 
+				padding: 0
+				list-style: none
+				@media screen and ( max-width: 576px )
+					padding: 20px 20px
+				li
+					display: flex
+					padding-bottom: 20px
+					@media screen and ( max-width: 576px )
+						padding-bottom: 20px
+					em 
+						color: #333333
+						font-size: 1rem
+					p
+						font-size: 18px
+						color: #333333
+						padding-left: 10px
+	.wrap-form
+		@media screen and(max-width:1025px)
+			margin: 0
+			padding: 0 10px
+		.frm-btnwrap
+			// position: absolute
+			display: flex
+			justify-content: flex-end
+			@media screen and ( max-width: 576px )
+				position: inherit
+				padding-top: 20px
+			// @media screen and(max-width:1025px)
+			// 	margin: 0 !important
+			.frm-btn
+				input
+					width: 160px
+					height: 40px
+					color: #ffffff
+					background: #00415f
+					cursor: pointer
+					font-size: 16px
+					font-weight: 400
+					text-align: center
+					border: none
+					// margin-right: 10px
+					&:nth-last-child(2)
+						display: none
+					@media screen and ( max-width:1024px  )
+						input 
+							padding: 0 15px
+		.form-group
+			margin: 0px 0 20px 0
+			span
+				color: #ffffff
+				font-size: 13px
+				&.fa-exclamation-triangle
+					color: firebrick
+			input,textarea
+				padding-left: 20px
+				border: 1px solid #e0e0e0
+				height: 42px
+				width: 100%
+				color: #999999
+				background: #ffffff
+				transition: .3s all ease-in-out
+
+				&:focus
+					outline: none
+					box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+			label
+				// color: #666666
+				// font-size: 14px
+				// font-weight: 400
+				// margin-bottom: 5px
+				display: none
+			textarea
+				height: 10rem
+				padding: 10px 0 0 20px
+		.frm-captcha
+			display: flex
+			@media screen and ( max-width: 576px )
+				display: flex
+				flex-wrap: wrap
+			.frm-captcha-input
+				order: 2
+				padding-left: 50px
+				width: 45%
+				display: flex
+				justify-content: center
+				align-items: center
+				@media screen and ( max-width: 1200px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+					width: 40%
+				@media screen and ( max-width: 1024px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+				@media screen and ( max-width: 768px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+				
+				@media screen and ( max-width: 576px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+					width: 100%
+				@media screen and ( max-width: 576px )
+					padding-top: 30px
+					order: 1
+		.RadCaptcha_Default
+			width: 25%
+			max-width: 25%
+			@media screen and ( max-width: 576px )
+				flex: 0 0 100%
+				max-width: 100%
+			#ctl00_mainContent_ctl04_captcha_SpamProtectorPanel
+				#ctl00_mainContent_ctl04_captcha_ctl01
+					.rcRefreshImage
+						display: none
+
+	.map-wrapper
+		padding-top: 30px
+		padding-bottom: 60px
+		@media screen and ( max-width: 1024px )
+			padding-bottom: 30px
+			padding-top: 30px
+		@media screen and ( max-width: 576px )
+			margin-top: 20px

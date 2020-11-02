@@ -1,0 +1,11 @@
+extends _layout.pug
+
+block var
+	- var title = 'Khuyến mãi'
+	- var bodyClass = 'promotion-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/promotion/index.pug
+	include ../components/pagination/index.pug

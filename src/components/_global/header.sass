@@ -1,0 +1,192 @@
+header
+	position: fixed
+	width: 100%
+	z-index: 10
+	background-color: #fff
+	.header_top
+		height: 120px
+		display: flex
+		align-items: center
+		@media screen and ( max-width: 1092px )
+			height: 80px
+		.header_left
+			flex: 1 0 38%
+			@media screen and ( max-width: 1092px )
+				display: none
+		.header_logo
+			flex: 1
+			@media screen and ( max-width: 1092px )
+				order: 1
+			.img
+				width: 100%
+				@media screen and ( max-width: 1092px )
+					width: 60px
+				img
+					width: 100%
+		.header_right
+			flex: 1 0 38%
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			@media screen and ( max-width: 1092px )
+				order: 2
+			.EN
+				margin-left: 20px
+				a
+					color: #111111
+					font-size: 1rem
+			.cart
+				margin-left: 20px
+				position: relative
+				&:before
+					content: "|"
+					position: absolute
+					top: -2px
+					left: -11px
+			.header_btn
+				padding: 8px 10px
+				margin-left: 30px
+				background-color: #00415f
+				color: #fff
+				cursor: pointer
+				display: none
+				@media screen and ( max-width: 1092px )
+					display: unset
+	.search
+		display: flex
+		justify-content: space-between
+		width: 200px
+		position: relative
+		border-bottom: 1px solid #999999
+		@media screen and ( max-width: 1092px )
+			margin: 10px 0
+		input
+			border: 0
+		button
+			border: 0
+			background-color: unset
+	.block_login
+		display: flex
+		@media screen and ( max-width: 1092px )
+			margin: 10px 0
+		.login
+			margin-left: 20px
+			position: relative
+			&:before
+				content: "\f007"
+				font-family: 'Font Awesome 5 Pro'
+				font-weight: bold
+				position: absolute
+				font-size: 12px
+				top: 4px
+				left: -15px
+			a
+				color: #111111
+				font-size: 1rem
+				padding-left: 10px
+		.regist
+			margin-left: 20px
+			position: relative
+			&:before
+				content: "|"
+				position: absolute
+				top: -2px
+				left: -11px
+			a
+				color: #111111
+				font-size: 16px
+	.header_bot
+		background-color: #010101
+		@media screen and ( max-width: 1092px )
+			display: none
+		.nav-wrapper
+			width: 100%
+	.nav-menu
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 50px
+		@media screen and ( max-width: 1092px )
+			flex-direction: column
+			height: unset
+			justify-content: center
+			margin: 10px 0
+		li
+			text-transform: uppercase
+			list-style: none
+			padding: 0 30px
+			@media screen and ( max-width: 1092px )
+				padding: 8px
+			a
+				color: #fefefe
+				font-family: "Montserrat-SemiBold"
+				font-size: 16px
+				position: relative
+				@media screen and ( max-width: 1092px )
+					color: #000
+				&:after
+					position: absolute
+					bottom: -5px
+					left: 0
+					right: 0
+					margin: auto
+					width: 0%
+					content: ''
+					color: transparent
+					background: #fefefe
+					height: 2px
+					transition: all .2s
+					@media screen and ( max-width: 1092px )
+						background: #000
+				&:hover
+					&:after
+						width: 100%
+
+	.menu_mobile
+		width: 50%
+		height: 100%
+		background-color: #fefefe
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 5
+		padding: 30px
+		opacity: 0
+		pointer-events: none
+		transform: translateX(20%)
+		transition: all .5s cubic-bezier(.68,-.55,.265,1.55)
+		@media screen and ( max-width: 1092px )
+			width: 50%
+		@media screen and ( max-width: 576px )
+			width: 100%
+		.header_btn
+			position: absolute
+			top: 0
+			right: 0
+			padding: 10px 12px
+			margin-left: 30px
+			background-color: #00415f
+			color: #fff
+			cursor: pointer
+		.mobile-wrapper
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 100%
+			height: 100%
+			justify-content: center
+	.menu_mobile.show
+		opacity: 1
+		pointer-events: auto
+		background: #ffffff
+		transform: translateX(0)
+	.overlay
+		position: fixed
+		display: none
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,0.5)
+	.overlay.show
+		display: block

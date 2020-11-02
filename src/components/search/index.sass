@@ -1,0 +1,97 @@
+// .search-toggle
+// 	position: relative
+// 	display: flex
+// 	justify-content: center
+// 	align-items: center
+// 	width: 32px
+// 	height: 32px
+// 	background: #999999
+// 	transition: .3s all ease-in-out
+// 	&:hover
+// 		background: none
+// 		&:after
+// 			color: $main
+// 	&:after
+// 		transition: .3s all ease-in-out
+// 		font-family: 'Material Design Icons'
+// 		content: '\f349'
+// 		font-size: 20px
+// 		display: flex
+// 		position: absolute
+// 		left: 0
+// 		bottom: 0
+// 		height: 32px
+// 		width: 32px
+// 		color: #ffffff
+// 		background: none
+// 		justify-content: center
+// 	@media screen and(max-width:1600px)
+// 		margin-left: 16px
+// 	@media screen and(max-width:1025px)
+// 		margin-top: 10px
+// 		display: none
+// .searchbox
+// 	position: absolute
+// 	display: block
+// 	justify-content: center
+// 	align-items: center
+// 	position: relative
+// 	bottom: 6px
+// 	&.active
+// 		input,button
+// 			opacity: 1
+// 			pointer-events: auto
+// 			z-index: 1
+// 		input
+// 			cursor: auto
+// 		button
+// 			cursor: pointer
+// 	input
+// 		padding: 0 16px
+// 		position: absolute
+// 		top: 0
+// 		height: 31px
+// 		right: 0
+// 		opacity: 0
+// 		cursor: none
+// 		pointer-events: none
+// 		z-index: -1
+// 		transition: opacity .3s ease-in-out
+// 		&:focus
+// 			outline: none
+// 	button
+// 		color: #ffffff
+// 		background: $main
+// 		width: 32px
+// 		height: 30px
+// 		opacity: 0
+// 		cursor: none
+// 		border: none
+// 		pointer-events: none
+// 		z-index: -1
+// 		position: absolute
+// 		top: 0
+// 		right: 0
+// 		transition: opacity .3s ease-in-out
+// 		em
+// 			color: #ffffff
+// 		&:focus
+// 			outline: none
+// 	@media screen and(max-width:1025px)
+// 		opacity: 1
+// 		pointer-events: auto
+// 		z-index: 1
+// 		display: block
+// 		position: static
+// 		input
+// 			position: static
+// 			height: 30px
+// 			opacity: 1
+// 			pointer-events: auto
+// 			z-index: 1
+// 		button
+// 			position: static
+// 			margin-left: -6px
+// 			opacity: 1
+// 			pointer-events: auto
+// 			z-index: 1

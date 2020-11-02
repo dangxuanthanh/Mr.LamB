@@ -1,0 +1,45 @@
+header
+	.container
+		.header_top
+			.header_left
+				.search
+					input(type='text', placeholder="Tìm kiếm")
+					button(type='submit')
+						em.fal.fa-search
+			.header_logo
+				a(href="index.html")
+					.img
+						img(src="./img/logo.png", alt="")
+			.header_right
+				.block_login
+					.login
+						a(href="") Đăng kí
+					.regist
+						a(href="") Đăng nhập
+				.language-wrapper
+					.EN
+						a(href="") EN
+				.cart
+					em.fas.fa-shopping-cart
+				.moblie-toggle
+					em.header_btn.fal.fa-bars
+	.header_bot
+		.container
+			.nav-wrapper
+				ul.nav-menu
+					li
+						a(href="about.html") Giới thiệu
+					li
+						a(href="product-list.html") Sản phẩm
+					li
+						a(href="promotion.html") Khuyến mãi
+					li
+						a(href="news-list.html") Tin tức
+					li
+						a(href="support-client.html") Hỗ trợ
+					li
+						a(href="contact.html") Liên hệ
+	.menu_mobile
+		em.header_btn.fal.fa-times
+		.mobile-wrapper
+	.overlay

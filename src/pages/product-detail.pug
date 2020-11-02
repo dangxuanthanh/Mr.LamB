@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Sản phẩm chi tiết'
+	- var bodyClass = 'product-detail-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/product-list/product-detail/index.pug

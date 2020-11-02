@@ -1,0 +1,14 @@
+extends _layout.pug
+
+block var
+	- var title = 'Trang chủ'
+	- var bodyClass = 'home-page'
+
+block main
+	include ../components/home/banner/index.pug
+	include ../components/home/product-home-1/index.pug
+	include ../components/home/product-home-2/index.pug
+	include ../components/home/product-home-3/index.pug
+	include ../components/home/material-product/index.pug
+	include ../components/home/news-event/index.pug
+

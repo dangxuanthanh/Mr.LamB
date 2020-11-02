@@ -1,0 +1,360 @@
+footer
+	background-color: #f8f8f8
+	margin-left: auto
+	.footer-top
+		padding: 15px 0 0 0
+		background: #ebebeb
+		.row
+			margin-bottom: 0
+			> *
+				margin-bottom: 0
+			.border-left-white
+				border-left: 1px solid rgba(#fff , 0.25)
+		.footer-link
+			width: 100%
+			height: 80px
+			a
+				color: #fff
+				display: inline-flex
+				align-items: center
+				.news-footer
+					ul
+						list-style: none
+						padding: 0
+						padding-left: 20px
+						li
+							strong
+								text-transform: uppercase
+								color: #111111
+								font-size: 18px
+							p
+								color: #111111
+								font-size: 1rem
+			.wrap-form
+				display: flex
+				@media screen and(max-width:1025px)
+					margin: 0
+					padding: 0 10px
+				.frm-btnwrap
+					padding-top: 5px
+					padding-left: 20px
+					@media screen and(max-width:767px)
+						position: static
+						display: block
+					.frm-btn
+						input
+							color: #ffffff
+							background: #00415f
+							cursor: pointer
+							font-size: 16px
+							font-weight: 400
+							text-align: center
+							border: none
+							width: 150px
+							height: 40px
+							margin-right: 10px
+							&:nth-last-child(2)
+								display: none
+							&:focus
+								outline: none
+							&:hover
+								background: #111111
+								color: #ffffff
+							@media screen and ( max-width:1024px  )
+								input 
+									padding: 0 15px
+				.form-group
+					margin: 5px 0 20px 0
+					span
+						color: #b2b2b2
+						font-size: 13px
+						&.fa-exclamation-triangle
+							color: firebrick
+					input,textarea
+						padding-left: 20px
+						height: 40px
+						width: 395px
+						color: #333
+						border: none
+						background: #ffffff
+						transition: .3s all ease-in-out
+						&:focus
+							outline: none
+							box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+				@media screen and ( max-width: 1024px  )
+					.form-group
+						input
+							width: auto
+				@media screen and ( max-width: 767px )
+					.frm-btnwrap
+						.frm-btn
+							input
+								width: 110px
+				@media screen and ( max-width: 576px )
+					.form-group
+						input
+							width: auto
+					.frm-btnwrap
+						.frm-btn
+							input
+								width: 110px
+				@media screen and ( max-width: 1024.98px )
+					.footer-link
+						height: auto
+						padding: 20px 0
+				@media screen and ( max-width: 576px )
+					.row
+						.border-left-white
+							border-left: 0
+
+	.footer-bottom
+		background: #ffffff
+		.col-lg-2
+			border-left: 1px solid #e0e0e0
+			&:nth-child(1)
+				border-left: none
+		.icon-footer-bottom
+			padding: 30px 0 30px 0
+			.icon-footer
+				display: flex
+				justify-content: center
+				align-items: center
+				.img
+					img
+						height: 40px
+						object-fit: scale-down
+			.title-footer
+				padding-top: 20px
+				h4
+					font-size: 14px
+					color: #111111
+					text-align: center
+			.text-footer
+				padding-top: 10px
+				p
+					color: #999999
+					font-size: 12px
+					text-align: center
+	.footer-block
+		position: relative
+		.block-title
+			display: flex
+			// border-right: solid 1px #e8e8e8
+			// border-left: solid 1px #e8e8e8
+			// border-bottom: solid 1px #e8e8e8
+			padding-bottom: 35px
+			padding-top: 35px
+			justify-content: space-between
+			h3
+				font-size: 24px
+				color: #333333
+				font-weight: bold
+				text-transform: uppercase
+				text-align: left
+				@media screen and ( max-width: 576px )
+					font-size: 15px
+			.footer-btn
+				background-color: rgb(238, 32, 46)
+				width: 170px
+				height: 40px
+				border-radius: 50px
+				display: flex
+				justify-content: center
+				align-items: center
+				em
+					color: #ffffff
+					padding-right: 10px
+					font-size: 16px
+				a
+					color: #ffffff
+					font-size: 14px
+
+		.footer-card
+			padding-top: 40px
+			padding-left: 20px
+			padding-bottom: 40px
+			// border-right: solid 1px #e8e8e8
+			// border-left: solid 1px #e8e8e8
+			// border-bottom: solid 1px #e8e8e8
+			@media screen and ( max-width: 1024.98px )
+				padding-bottom: 0
+			&.pr-40
+				padding-right: 39px
+			.card__title
+				padding-bottom: 15px
+				h4
+					font-size: 14px
+					color: #333333
+					font-weight: bold
+					text-transform: uppercase
+				@media screen and (max-width: 768px)
+					padding-bottom: 15px
+					h2
+						font-size: 14px
+			.card__body
+				ul
+					padding: 0
+					list-style: none
+					li
+						display: flex
+						align-items: flex-start
+						span
+							i
+								font-size: 14px
+								color: #111111
+								padding-right: 5px
+						p
+							font-size: 14px
+							color: #777777
+							text-align: left
+							padding-left: 10px
+						strong
+							font-size: 14px
+							p
+								font-size: 14px
+								font-weight: 300
+								color: #777777
+						a
+							color: #333333
+							font-size: 14px
+							padding-bottom: 10px
+						&:first-child
+							p
+								margin-bottom: 25px
+							@media screen and ( max-width:  576px)
+								p 
+									margin-bottom: 0
+			.card__body_2
+				ul
+					padding: 0
+					list-style: none
+					li
+						display: flex
+						align-items: flex-startx
+						position: relative
+						padding-left: 20px
+						&:before
+							content: "\f105"
+							font-family: 'Font Awesome 5 Pro'
+							position: absolute
+							top: 0
+							left: 0
+							color: #777777
+						p
+							font-size: 14px
+							color: #777777
+							text-align: left
+							padding-left: 10px
+						strong
+							font-size: 14px
+							p
+								font-size: 14px
+								font-weight: 300
+								color: #777777
+						a
+							color: #777777
+							font-size: 14px
+							padding-bottom: 10px
+						&:first-child
+							p
+								margin-bottom: 25px
+							@media screen and ( max-width:  576px)
+								p 
+									margin-bottom: 0
+
+			@media screen and ( max-width:  1199px)
+				padding-left: 15px
+			@media screen and ( max-width:  575px)
+				padding: 15px
+	.footer-copyright
+		border-bottom: 1px solid #111111
+		padding-bottom: 5px
+		.bg-pay
+			display: flex
+			justify-content: center
+			align-items: center
+			position: relative
+			@media screen and ( max-width: 576px )
+				display: block
+			&:before
+				position: absolute
+				content: ''
+				left: auto
+				width: 1px
+				height: 90px
+				top: 60%
+				background: #e0e0e0
+				transform: translateY(-50%)
+				@media screen and ( max-width: 1024.98px)
+					display: none
+				@media screen and ( max-width: 576px)
+					display: none
+			.pay-link
+				.pay-title
+					h4
+						text-transform: uppercase
+						font-size: 1rem
+						color: #111111
+						text-align: center
+				.pay-item
+					padding-top: 20px
+					@media screen and ( max-width: 576px )
+						padding-bottom: 30px
+					ul
+						padding: 0
+						list-style: none
+						display: flex
+						margin-left: 15px
+						justify-content: center
+						align-items: center
+						li
+							padding-right: 20px
+							a
+								img
+									width: 33px
+									height: 33px
+									object-fit: scale-down
+		
+		.policy-link
+			margin-top: 20px
+			@media screen and ( max-width: 576px )
+				margin-top: 0
+			ul
+				text-align: center
+				list-style: none
+				padding-left: 0
+				margin-left: -10px
+				display: flex
+				align-items: center
+				justify-content: center
+				li
+					align-items: center
+					margin-left: 10px
+					padding-left: 10px
+					position: relative
+					+ li
+						&:before
+							position: absolute
+							content: '|'
+							left: -5px
+							top: 50%
+							transform: translateY(-50%)
+							@media screen and ( max-width: 1024.98px)
+								display: none
+							@media screen and ( max-width: 576px)
+								display: none
+					a
+						font-size: 12px
+						color: #221f1f
+
+		.copyright
+			text-align: center
+			font-size: 12px
+			color: #999999
+			margin-top: 20px
+			line-height: 18px
+
+		// @media screen and ( max-width: 768.98px )
+		// 	padding: 30px 0
+		// 	.policy-link
+		// 		margin-top: 20px
